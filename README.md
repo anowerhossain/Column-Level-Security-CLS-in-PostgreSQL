@@ -17,6 +17,17 @@ CREATE TABLE employees (
 );
 ```
 
+-Insert some data
+```sql
+INSERT INTO employees (name, email, salary, department)
+VALUES
+  ('Alice Johnson', 'alice.johnson@example.com', 55000.00, 'HR'),
+  ('Bob Smith', 'bob.smith@example.com', 60000.00, 'Engineering'),
+  ('Charlie Brown', 'charlie.brown@example.com', 48000.00, 'Marketing'),
+  ('Diana Miller', 'diana.miller@example.com', 70000.00, 'Engineering'),
+  ('Eva White', 'eva.white@example.com', 65000.00, 'Sales');
+```
+
 - Create a View with limited columns 👓:
 ```sql
 CREATE VIEW public_employee_view AS
